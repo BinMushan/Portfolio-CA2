@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bin Mushan Portfolio</title>
+  <link rel="icon" type="image/x-icon" href="/Assets/IMG_logo.png">
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <link rel="stylesheet" href="portfolio.css">
+</head>
+
+<body>
+
+  <!-- Liquid Glass Blobs for background highlights) -->
+  <div class="liquid-wrap" aria-hidden="true">
+    <div class="blob b1"></div>
+    <div class="blob b2"></div>
+    <div class="blob b3"></div>
+  </div>
+
+
+
+  <header>
+    <div class="container nav">
+      <div class="brand"><span>Bin Mushan</span></div>
+      <nav class="nav-links">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#timeline" class="nav-link">Timeline</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <button id="themeBtn" class="btn" aria-label="Toggle theme"><i class="ph ph-sun"></i><span>Theme</span></button>
+      </nav>
+      <button class="mobile-menu-btn" id="mobileMenuBtn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Hero -->
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <div class="hero-text">
+          <div class="card title">
+            <div>
+              <h1>Hello, I'm <span class="gradient-text">Bin Mushan</span></h1>
+              <p class="hero-subtitle">Aspiring <span class="typing-text"></span></p>
+              <p>Welcome! I’m an ICT undergraduate passionate about web development, AI, and creating unique digital
+                experiences. Explore my work and ideas!</p>
+
+
+              <div class="quick">
+                <a class="btn primary" href="#projects">View Projects<i class="ph ph-rocket-launch"></i></a>
+                <a class="btn secondary" href="#contact"><i class="ph ph-paper-plane-tilt"></i>Contact Me</a>
+              </div>
+              <div class="social-links">
+                <a href="https://github.com/BinMushan" target="_blank" class="social-link"><i class="ph ph-github-logo"></i></a>
+                <a href="https://www.linkedin.com/in/binmushan" target="_blank" class="social-link"><i
+                    class="ph ph-linkedin-logo"></i></a>
+                <a href="https://x.com/bin_mushan?s=21" target="_blank" class="social-link"><i class="ph ph-x-logo"></i></a>
+                <a href="https://www.instagram.com/mushan_mmb" target="_blank" class="social-link"><i
+                    class="ph ph-instagram-logo"></i></a>
+                <a href="https://www.tiktok.com/@mmb_mushan" target="_blank" class="social-link"><i class="ph ph-tiktok-logo"></i></a>
+                <a href="https://wa.me/message/GFPFF26LWJ4CI1" target="_blank"  class="social-link"><i
+                    class="ph ph-whatsapp-logo"></i></a>
+              </div>
+            </div>
+            <div class="hero-visual">
+              <div class="avatar-container">
+                <div class="avatar-card card">
+                  <div class="avatar">
+                    <img src="./Assets/IMG_1432.jpeg" alt="Bin Mushan">
+                  </div>
+                  <div class="avatar-info">
+                    <h3>Bin Mushan</h3>
+                    <p>ICT Undergraduate</p>
+                    <div class="status">
+                      <span class="status-dot"></span>
+                      <span>Available for projects</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+      <div class="card">
+        <h2>About Me</h2>
+        <p>I'm an ICT undergraduate at South Eastern University of Sri Lanka, passionate about creating digital
+          experiences that combine modern technology with intuitive design. My journey in tech started with curiosity
+          and has grown into a drive to learn and create impactful solutions.</p>
+
+        <div class="about-grid" style="margin-top:14px;">
+          <div class="stat">
+            <i class="ph ph-graduation-cap"></i>
+            <div>
+              <strong>SEUSL — BSc (ICT)</strong>
+              <p>First-year student building a strong foundation in Software technology and Network technology.</p>
+            </div>
+          </div>
+
+          <div class="stat">
+            <i class="ph ph-lightning"></i>
+            <div>
+              <strong>Focus Areas</strong>
+              <p>Software development, programming fundamentals, algorithms & data structures, and modern web
+                technologies.</p>
+            </div>
+          </div>
+
+          <div class="stat">
+            <i class="ph ph-code"></i>
+            <div>
+              <strong>Development Approach</strong>
+              <p>Write clean, efficient code, focus on learning best practices, and create software that is reliable and
+                user-friendly.</p>
+            </div>
+          </div>
+
+          <div class="stat">
+            <i class="ph ph-target"></i>
+            <div>
+              <strong>Future Academic Goal</strong>
+              <p>Successfully complete my degree with a good class by staying consistent, improving skills, and
+                maintaining strong academic performance.</p>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+      </div>
+
+    </section>
+
+    <!-- 2. Educational Background -->
+    <section id="education">
+      <div class="card">
+        <h2>Educational Background</h2>
+        <div class="timeline">
+          <div class="t-item">
+            <div class="t-marker"><i class="ph ph-graduation-cap"></i></div>
+            <div class="t-content">
+              <h3>Bachelor of Science in ICT</h3>
+              <p class="t-date">September 2024 - Present (Expected 2028)</p>
+              <p><strong>South Eastern University of Sri Lanka</strong></p>
+              <p>Currently a first-year undergraduate building a strong foundation in computer science, algorithms,
+                database management, and web technologies.</p>
+            </div>
+          </div>
+
+          <div class="t-item">
+            <div class="t-marker"><i class="ph ph-certificate"></i></div>
+            <div class="t-content">
+              <h3>GCE Advanced Level (E-TECH)</h3>
+              <p class="t-date">PASSOUT 2023</p>
+              <p><strong>K/ hewaheta Central College</strong></p>
+              <p>Completed secondary education with a focus on ICT, Engineering Technology, and Science for Technology.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Work / Professional Experience -->
+    <section id="experience">
+      <div class="card">
+        <h2>Work / Professional Experience</h2>
+        <div class="timeline">
+          <div class="t-item">
+            <div class="t-marker"><i class="ph ph-storefront"></i></div>
+            <div class="t-content">
+              <h3>Freelancer</h3>
+              <p class="t-date">August 2024 - October 2024</p>
+              <p><strong>Project: Aathi's Plaza</strong></p>
+              <ul>
+                <li>Designed and developed modular front-end pages for a ladieswear business.</li>
+                <li>Implemented a product catalog and customer management interface.</li>
+                <li>Focused on responsive design and user experience optimization.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="t-item">
+            <div class="t-marker"><i class="ph ph-code"></i></div>
+            <div class="t-content">
+              <h3>Web Development </h3>
+              <p class="t-date">Jan 2024 - Present</p>
+              <p>Engaged in continuous learning and application development, building production-ready clones and
+                utilities to refine React and vanilla JS skills.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Projects -->
+    <section id="projects">
+      <div class="card">
+        <h2>Projects</h2>
+        <div class="projects">
+
+          <article class="card project-card">
+            <div class="project-icon">
+              <i class="ph ph-paint-brush"></i>
+            </div>
+            <h3>Sustainable Water Management</h3>
+            <p>Created the UI/UX design for a sustainable water management solution using Figma, focusing on intuitive
+              user flows, clear data visualization, and eco-friendly awareness. The design promotes practical
+              implementation on campus inter faculty Designathon 2025.</p>
+            <div class="project-meta">
+              <span class="badge">figma</span>
+              <span class="badge">research gapෆ</span>
+              <span class="badge">mobile UI </span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link"><i class="ph ph-globe"></i> Live Demo</a>
+              <a href="#" class="project-link"><i class="ph ph-github-logo"></i> Code</a>
+            </div>
+          </article>
+
+
+          <article class="card project-card">
+            <div class="project-icon">
+              <i class="ph ph-cpu"></i>
+            </div>
+            <h3>AI Image Generator</h3>
+            <p>Web app that generates unique images using AI algorithms. Features real-time previews and API
+              integration.</p>
+            <div class="project-meta">
+              <span class="badge">AI API</span><span class="badge">Cloud</span><span class="badge">JavaFX</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link"><i class="ph ph-globe"></i> Live Demo</a>
+              <a href="#" class="project-link"><i class="ph ph-github-logo"></i> Code</a>
+            </div>
+          </article>
+
+          <article class="card project-card">
+            <div class="project-icon">
+              <i class="ph ph-shopping-cart"></i>
+            </div>
+            <h3>LeafDB — C Language</h3>
+            <p>Developed a software application in C for database management, focusing on data storage, retrieval, and
+              basic operations. Aimed at improving programming fundamentals and understanding core concepts of software
+              development.</p>
+
+            <div class="project-meta">
+              <span class="badge">C Language</span><span class="badge">Programming</span><span class="badge">Data
+                Management</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link"><i class="ph ph-globe"></i> Live Demo</a>
+              <a href="#" class="project-link"><i class="ph ph-github-logo"></i> Code</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Skills -->
+    <section id="skills">
+      <div class="card">
+        <h2>Skills & Technologies</h2>
+        <div class="skills-container">
+
+          <div class="skill-category">
+            <h3>Tools & Platforms</h3>
+            <div class="chips">
+              <span class="chip">Git & GitHub</span>
+              <span class="chip">VS Code</span>
+              <span class="chip">Figma</span>
+              <span class="chip">Netlify</span>
+              <span class="chip">Cloud Concepts</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h3>Frontend Development</h3>
+            <div class="chips">
+              <span class="chip">HTML</span>
+              <span class="chip">CSS</span>
+              <span class="chip">JavaScript</span>
+              <span class="chip">Responsive Design</span>
+
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3>Backend & Databases</h3>
+            <div class="chips">
+              <span class="chip">Node.js</span>
+              <span class="chip">Python</span>
+              <span class="chip">MySQL</span>
+
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h3>Learning</h3>
+            <div class="chips">
+              <span class="chip">N8N</span>
+              <span class="chip">AI/ML Fundamentals</span>
+              <span class="chip">Cloud Computing</span>
+              <span class="chip">DevOps Basics</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Timeline -->
+    <section id="timeline">
+      <div class="card">
+        <h2>Journey & Milestones</h2>
+        <div class="timeline">
+
+          <div class="t-item">
+            <div class="t-marker">
+              <i class="ph ph-star"></i>
+            </div>
+            <div class="t-content">
+              <h3>2025 — B Create With Us</h3>
+              <p class="t-date">Active & Ongoing</p>
+              <p>
+                Founded and developed <strong>B Create With Us</strong>, a creative digital agency focused on branding,
+                graphic design,
+                and digital marketing. Delivered visually strong designs and built brand identities that help businesses
+                grow online.
+              </p>
+            </div>
+
+          </div>
+
+          <div class="t-item">
+            <div class="t-marker">
+              <i class="ph ph-student"></i>
+            </div>
+            <div class="t-content">
+              <h3>2022/23  —  ICT Degree</h3>
+              <p class="t-date">Started September 2023</p>
+              <p>Began Bachelor of Science in Information and Communication Technology at South Eastern University of
+                Sri Lanka. Started building foundational knowledge in programming, databases, and web technologies.</p>
+            </div>
+
+          </div>
+
+          <div class="t-item">
+            <div class="t-marker">
+              <i class="ph ph-graduation-cap"></i>
+            </div>
+            <div class="t-content">
+              <h3>2022/23 — GCE Advanced Level</h3>
+              <p class="t-date">Successfully Completed</p>
+              <p>
+                Completed GCE Advanced Level with good results, demonstrating strong academic commitment,
+                discipline, and readiness for higher education.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <div class="card">
+        <h2>Get In Touch</h2>
+        <div class="contact-grid">
+          <div class="form">
+            <form id="contact-form">
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+              </div>
+              <button class="btn primary" type="submit"><i class="ph ph-paper-plane-right"></i>Send Message</button>
+            </form>
+          </div>
+          <div class="contact-info">
+            <h3>Let's Connect</h3>
+            <p>I'm always open to discussing new opportunities, creative projects, or just having a chat about
+              technology and design.</p>
+            <div class="contact-methods">
+              <div class="contact-method">
+                <i class="ph ph-envelope"></i>
+                <div>
+                  <strong>Email</strong>
+                  <a href="mailto:mmbmushan@gmail.com">mmbmushan@gmail.com</a>
+                </div>
+              </div>
+              <div class="contact-method">
+                <i class="ph ph-linkedin-logo"></i>
+                <div>
+                  <strong>LinkedIn</strong>
+                  <a href="https://www.linkedin.com/in/binmushan" target="_blank" rel="noreferrer">/in/binmushan</a>
+                </div>
+              </div>
+              <div class="contact-method">
+                <i class="ph ph-github-logo"></i>
+                <div>
+                  <strong>GitHub</strong>
+                  <a href="https://github.com/BinMushan" target="_blank" rel="noreferrer">github.com/binmushan</a>
+                </div>
+              </div>
+              <div class="contact-method">
+                <i class="ph ph-map-pin"></i>
+                <div>
+                  <strong>Location</strong>
+                  <span>Sri Lanka</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <div class="brand"> <span>Bin Mushan</span></div>
+          <p>Coding solutions, inspiring minds, and building a brighter tomorrow.</p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-column">
+            <h4>Explore</h4>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+          </div>
+
+          <div class="footer-column" style="margin: 0 auto;">
+            <h4>Connect</h4>
+            <a href="#contact">Contact</a>
+            <a href="https://github.com/BinMushan" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/binmushan" target="_blank">LinkedIn</a>
+          </div>
+
+        </div>
+      </div>
+
+
+      <div class="footer-bottom">
+        <p>© 2026 Bin Mushan. Built with ♥ in Sri Lanka.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="portfolio.js"></script>
+</body>
+
+</html>
